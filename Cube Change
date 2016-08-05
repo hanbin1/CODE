@@ -1,0 +1,24 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{  int t;
+cin>>t;
+while(t--)
+{
+	long long int n;
+	cin>>n;
+	if(n==1)
+	cout<<1<<endl;
+//	int cube=n*n*n;
+else{
+	long long int dirty_cube=2*((n*n)+(n*(n-2))+(n-2)*(n-2));
+
+    cout << dirty_cube << endl;}
+	
+}
+    
+    
+    return 0;
+}
