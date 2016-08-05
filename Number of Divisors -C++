@@ -1,0 +1,31 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+   int test;
+   long long int n;
+   cin>>test;
+   while(test--)
+{
+	cin>>n;
+
+	if(n==1)
+	  {cout<<1<<endl;}
+	else
+	{
+	  long long int i=2,count=0;
+	  while(i<=sqrt(n))
+	  { if(n%i==0)
+	       {count++;
+	          if(i!=(n/i))
+	             {count++;}
+	       }
+	       i++;
+	  }
+	  cout<<count+2<<endl;
+    }
+}
+    return 0;
+}
