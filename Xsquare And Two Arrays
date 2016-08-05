@@ -1,0 +1,50 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int N,Q,i=0;
+int array,start,end;
+cin>>N>>Q;
+
+int A[N];
+int B[N];
+
+for(int i=0;i<N;i++)
+{cin>>A[i];
+
+}
+
+for(int i=0;i<N;i++)
+{cin>>B[i];}
+
+while(i<Q)
+{ cin>>array>>start>>end;
+ long long int sumA=0;
+ long long int sumB=0;
+
+  if(array==1)
+  { 
+  	for(int j=start-1;j<end;j+=2)
+  	{sumA+=A[j];}
+  	
+  	for(int j=start;j<end;j+=2)
+    {sumB+=B[j];}
+    cout<<sumA+sumB<<endl;
+  }
+  
+  else
+  { for(int j=start-1;j<end;j+=2)
+  	{sumB+=B[j];}
+  	for(int j=start;j<end;j+=2)
+  	{sumA+=A[j];}
+  cout<<sumA+sumB<<endl;
+  }
+	//cout<<sumA+sumB<<endl;
+	i++;
+}
+
+    return 0;
+}
