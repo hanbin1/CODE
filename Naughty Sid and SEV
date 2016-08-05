@@ -1,0 +1,36 @@
+
+C++  -----------------------------------------------------------
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+#define pi 3.141
+
+int main()
+{
+   int test;
+   int  a,H,h,theta;;
+   cin>>test;
+   
+   while(test--)
+   {  int t;
+   	cin>>a>>H>>theta;
+   	
+   	
+   	t=tan(theta*(pi/180));
+    if(t<=H/a)
+    {h=H-(a/2)*t;}
+else
+      {h=H*H/(2*a*t);}
+   //	while( (H-h)/a < tan(theta*pi/180.0))
+   	//{++h;}
+   	
+   	cout<<ceil(h)<<endl;
+   }
+   
+   	
+   	return 0;
+   	
+}
+
