@@ -1,0 +1,30 @@
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int a,b,c,d;
+		 long long int k;
+		cin>>a>>b>>c>>d>>k;
+		int t=1;
+		if(d>=k)
+		{cout<<0<<endl;}
+		else{long long int F=0;
+		while(F<=k)
+	     	{  
+			t++;
+			 F=a*pow(t,3)+b*pow(t,2)+c*pow(t,1)+d;
+	        }
+           cout << t-1<< endl;
+			
+		}
+	}
+	
+    return 0;
+}
