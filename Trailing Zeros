@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+
+
+long long int factorial(long long int num)
+{
+long long int fact=1;
+for(long long int i=1;i<=num;i++)
+{fact=fact*i;}
+return fact;
+}
+
+int main()
+{  int count=0;
+   long long int n;
+   cin>>n;
+   long long int ans=factorial(n);
+   while(ans%10==0)
+   {
+   count++;
+    ans=ans/10;
+   } 
+   cout<<count<<endl;
+   
+    return 0;
+}
+   
